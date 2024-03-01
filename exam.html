@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./exam.css" />
+    <script type="module" src="./main.js"></script>
+    <title>Hệ thống quản lý</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="header-container">
+          <img class="logo" src="./favicon.ico" />
+          <h1>PTIT S-LINK</h1>
+        </div>
+      </header>
+      <div class="body">
+        <nav class="menu">
+          <div class="menu-item">
+            <span>Dashboard</span>
+          </div>
+          <div class="menu-item active">
+            <span>Quản lý kỳ thi</span>
+          </div>
+          <div class="menu-item">
+            <span>Quản lý Kì thi</span>
+          </div>
+          <div class="menu-item">
+            <span>Thống kê</span>
+          </div>
+        </nav>
+        <main>
+          <div class="main-container">
+            <div class="exam-area">
+              <div class="exam-container">
+                <div>
+                  <span style="font-size: 16px; font-weight: 600">Kì thi</span>
+                </div>
+                <div
+                  class="button"
+                  id="create-exam-button"
+                  style="margin-top: 20px"
+                  onclick="redirectToNewPage('create-exam.html')"
+                >
+                  Thêm mới
+                </div>
+                <table class="exam-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Tên kì thi</th>
+                      <th>Loại</th>
+                      <th>Số câu</th>
+                      <th>Ngày tạo</th>
+                      <th>Mô tả</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Giữa kì môn Lập trình web</td>
+                      <td>Tự do</td>
+                      <td>40</td>
+                      <td>29-2-2024</td>
+                      <td class="description-col">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f0f2f5;
+  font-size: 16px;
+}
+
+.page {
+  display: grid;
+  position: relative;
+}
+
+header {
+  height: 48px;
+  background-color: #001529;
+  z-index: 99;
+}
+
+.header-container {
+  height: 100%;
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.header-container > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.body {
+  display: flex;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background-color: #001529;
+  padding-top: 48px;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  width: 180px;
+  padding: 8px 0 8px 20px;
+  color: #ffffffa6;
+}
+
+.menu > .active {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item > span {
+  font-size: 16px;
+}
+
+main {
+  height: 90vh;
+  position: absolute;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  background: #f0f2f5;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+  width: 0px; /* Độ rộng của thanh trượt */
+}
+
+.main-container {
+  width: 80vw;
+  margin: 20px 0 0 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #cc0d00;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.exam-area > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.exam-list-card {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.exam-card {
+  width: 20vw;
+  height: 170px;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.exam-card-content {
+  margin-top: 10px;
+}
+
+.student-area {
+  width: 80vw;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 10px 15px -3px #0000001a;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: #090909;
+}
+
+.statistic-area {
+  width: 80vw;
+  height: 500px;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
